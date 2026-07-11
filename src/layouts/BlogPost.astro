@@ -1,55 +1,30 @@
 ---
-import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
 import FormattedDate from '../components/FormattedDate.astro';
-import Header from '../components/Header.astro';
+import BaseLayout from './BaseLayout.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate } = Astro.props;
 ---
 
-<html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-	</head>
-
-	<body>
-		<Header />
-		<main class="m-0 w-[calc(100%-2em)] max-w-full px-4 py-12 max-md:p-4">
-			<article>
-				<div class="w-full">
+<BaseLayout title={title} description={description}>
+	<article>
+		<div class="prose max-w-none">
+			<div class="mb-4 py-4 leading-none">
+				<h1 class="m-0 mb-4">{title}</h1>
+				<div class="text-gray">
+					<FormattedDate date={pubDate} />
 					{
-						heroImage && (
-							<Image
-								width={1020}
-								height={510}
-								src={heroImage}
-								alt=""
-								class="mx-auto block rounded-xl shadow-post"
-							/>
+						updatedDate && (
+							<div class="italic">
+								Last updated on <FormattedDate date={updatedDate} />
+							</div>
 						)
 					}
 				</div>
-				<div class="prose mx-auto w-[720px] max-w-[calc(100%-2em)] p-4">
-					<div class="mb-4 py-4 text-center leading-none">
-						<div class="m-0 mb-2 text-gray">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="italic">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1 class="m-0 mb-2">{title}</h1>
-						<hr />
-					</div>
-					<slot />
-				</div>
-			</article>
-		</main>
-	</body>
-</html>
+			</div>
+			<slot />
+		</div>
+	</article>
+</BaseLayout>
