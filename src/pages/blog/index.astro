@@ -15,95 +15,53 @@ const posts = (await getCollection('blog')).sort(
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			main {
-				width: 960px;
-			}
-			ul {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-			ul li {
-				width: calc(50% - 1rem);
-			}
-			ul li * {
-				text-decoration: none;
-				transition: 0.2s ease;
-			}
-			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
-			}
-			ul li:first-child img {
-				width: 100%;
-			}
-			ul li:first-child .title {
-				font-size: 2.369rem;
-			}
-			ul li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
-			}
-			ul li a {
-				display: block;
-			}
-			.title {
-				margin: 0;
-				color: rgb(var(--black));
-				line-height: 1;
-			}
-			.date {
-				margin: 0;
-				color: rgb(var(--gray));
-			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
-			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
-			}
-			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
-				}
-				ul li {
-					width: 100%;
-					text-align: center;
-				}
-				ul li:first-child {
-					margin-bottom: 0;
-				}
-				ul li:first-child .title {
-					font-size: 1.563em;
-				}
-			}
-		</style>
 	</head>
 	<body>
 		<Header />
-		<main>
+		<main class="mx-auto w-[960px] max-w-[calc(100%-2em)] px-4 py-12 max-md:p-4">
 			<section>
-				<ul>
+				<ul class="m-0 flex list-none flex-wrap gap-8 p-0 max-md:gap-2">
 					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.id}/`}>
-									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
-									)}
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
-						))
+						posts.map((post, i) => {
+							const featured = i === 0;
+							return (
+								<li
+									class:list={[
+										featured
+											? 'mb-4 w-full text-center max-md:mb-0'
+											: 'w-[calc(50%-1rem)] max-md:w-full max-md:text-center',
+									]}
+								>
+									<a href={`/blog/${post.id}/`} class="group block">
+										{post.data.heroImage && (
+											<Image
+												width={720}
+												height={360}
+												src={post.data.heroImage}
+												alt=""
+												class:list={[
+													'mb-2 rounded-xl transition duration-200 group-hover:shadow-post',
+													featured && 'w-full',
+												]}
+											/>
+										)}
+										<h4
+											class:list={[
+												'm-0 leading-none text-ink transition duration-200 group-hover:text-accent',
+												featured
+													? 'text-[2.369rem] max-md:text-[1.563em]'
+													: 'text-[1.563em]',
+											]}
+										>
+											{post.data.title}
+										</h4>
+										<p class="m-0 text-gray transition duration-200 group-hover:text-accent">
+											<FormattedDate date={post.data.pubDate} />
+										</p>
+									</a>
+								</li>
+							);
+						})
 					}
 				</ul>
 			</section>
