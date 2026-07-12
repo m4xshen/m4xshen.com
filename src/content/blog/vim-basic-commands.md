@@ -1,7 +1,7 @@
 ---
-title: "Essential Vim commands for efficient text editing"
+title: 'Essential Vim commands for efficient text editing'
 pubDate: '2023-01-25'
-description: "Master the essential Vim commands for efficient text editing. Learn Normal, Insert, and Command-line modes, navigation, editing, and more in this comprehensive Vim tutorial."
+description: 'Master the essential Vim commands for efficient text editing. Learn Normal, Insert, and Command-line modes, navigation, editing, and more in this comprehensive Vim tutorial.'
 ---
 
 In this tutorial, I'll cover the basic commands and concepts that you need to know to work in Vim efficiently. I recommend you to open a file with Vim/Neovim and try the command while reading it.
@@ -23,7 +23,6 @@ To begin with, let's learn how to move your cursor in Vim normal mode.
 `motion` is a command that moves your cursor to a specific location. Here are some basic motions:
 
 #### Up-down motions
-
 
 ```plaintext
 k           go up

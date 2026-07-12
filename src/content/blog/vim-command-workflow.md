@@ -1,7 +1,7 @@
 ---
-title: "Practical Vim command workflow"
+title: 'Practical Vim command workflow'
 pubDate: '2023-01-26'
-description: "Master the art of efficient text navigation and editing in Vim with this comprehensive command workflow tutorial. Explore key commands and practical examples to enhance your productivity in Vim."
+description: 'Master the art of efficient text navigation and editing in Vim with this comprehensive command workflow tutorial. Explore key commands and practical examples to enhance your productivity in Vim.'
 ---
 
 In Vim, there's a variety of commands that let you accomplish tasks in different ways. This can be overwhelming for beginners trying to figure out the most efficient keystrokes for editing. In this tutorial, I'll share my approach to using Vim commands and offer some real life examples to help you improve your workflow.
@@ -25,6 +25,7 @@ If you are not familiar with some of the commands and concepts, you can learn ab
 Here are 4 real situations I faced when creating a todo list website with javascript. I recommend you to think about how you would achieve the editing goal first and then see my approach.
 
 Notes:
+
 - `^` or `v` points to the position of the cursor.
 - There are line number and relative line number on the left.
 
@@ -76,10 +77,10 @@ Goal: Add a line `activeList.sortMethod = 'Date';` below `document.querySelector
 ```javascript
 // current mode: Insert
   1 document.querySelector('.sort-name').addEventListener('click', () => {
-343   activeList.sortMethod = 'Name'; 
+343   activeList.sortMethod = 'Name';
   1   activeList.update();           ^
   2 })
-  3 
+  3
   4 document.querySelector('.sort-date').addEventListener('click', () => {
   5   activeList.update();
   6 })

@@ -4,9 +4,9 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 
 interface Props {
-	title: string;
-	description: string;
-	image?: ImageMetadata;
+  title: string;
+  description: string;
+  image?: ImageMetadata;
 }
 
 const { title, description, image } = Astro.props;
@@ -14,15 +14,15 @@ const { title, description, image } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={title} description={description} image={image} />
-	</head>
-	<body>
-		<div class="mx-auto mb-24 w-[720px] max-w-[calc(100%-2em)] px-4">
-			<Header />
-			<main class="">
-				<slot />
-			</main>
-		</div>
-	</body>
+  <head>
+    <BaseHead title={title} description={description} image={image} />
+  </head>
+  <body>
+    <div class="mx-auto mb-24 w-[720px] max-w-[calc(100%-2em)] px-4">
+      <Header />
+      <main class="">
+        <slot />
+      </main>
+    </div>
+  </body>
 </html>

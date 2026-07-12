@@ -1,7 +1,7 @@
 ---
-title: "Tailwind CSS under the hood"
+title: 'Tailwind CSS under the hood'
 pubDate: 2024-01-31
-description: "Learn how Tailwind CSS works under the hood by learning the concept of utility-first and how it extracts the class names from files."
+description: 'Learn how Tailwind CSS works under the hood by learning the concept of utility-first and how it extracts the class names from files.'
 ---
 
 Tailwind CSS defines itself on its official site as:
@@ -63,7 +63,7 @@ The paths to all of your content files is specified by `content` section of your
 ```jsx
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./pages/**/*.{html,js}", "./components/**/*.{html,js}"],
+  content: ['./pages/**/*.{html,js}', './components/**/*.{html,js}'],
   // ...
 };
 ```
@@ -71,7 +71,7 @@ module.exports = {
 Tailwind use [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions) to detect class names. Therefore when you want to use utility class conditionally like the following syntax doesn’t work:
 
 ```jsx
-<div className={`text-${error ? "red" : "green"}-600`}>Lorem Ipsum</div>
+<div className={`text-${error ? 'red' : 'green'}-600`}>Lorem Ipsum</div>
 ```
 
 This is because the regular expression doesn’t match any class name.
@@ -79,7 +79,7 @@ This is because the regular expression doesn’t match any class name.
 Instead, you should use:
 
 ```jsx
-<div className={error ? "text-red-600" : "text-green-600"}>Lorem Ipsum</div>
+<div className={error ? 'text-red-600' : 'text-green-600'}>Lorem Ipsum</div>
 ```
 
 In the second approach, Tailwind can match the string `'text-red-600'` and `'text-green-600'` and then generates the corresponding CSS.
@@ -101,8 +101,8 @@ Instead, map props to complete class names that are statically detectable at bui
 ```javascript
 function Button({ color, children }) {
   const colorVariants = {
-    blue: "bg-blue-600 hover:bg-blue-500",
-    red: "bg-red-600 hover:bg-red-500",
+    blue: 'bg-blue-600 hover:bg-blue-500',
+    red: 'bg-red-600 hover:bg-red-500',
   };
 
   return <button className={`${colorVariants[color]} ...`}>{children}</button>;

@@ -1,7 +1,7 @@
 ---
-title: "How to promote your side project"
+title: 'How to promote your side project'
 pubDate: 2025-05-22
-description: "Learn how to promote your side project with these tips. From preparing your project to sharing it with the community, discover the strategies to attract users and contributors."
+description: 'Learn how to promote your side project with these tips. From preparing your project to sharing it with the community, discover the strategies to attract users and contributors.'
 ---
 
 Recently, my Neovim plugin: [hardtime.nvim](https://github.com/m4xshen/hardtime.nvim) reached 2k stars on GitHub!

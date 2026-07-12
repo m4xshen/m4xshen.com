@@ -1,7 +1,7 @@
 ---
-title: "Build your modern Neovim config in Lua"
-pubDate: "2023-02-26"
-description: "Learn how to build a modern Neovim configuration in Lua with options, mappings, autocmds, and plugins. Follow a structured approach to enhance your Neovim experience."
+title: 'Build your modern Neovim config in Lua'
+pubDate: '2023-02-26'
+description: 'Learn how to build a modern Neovim configuration in Lua with options, mappings, autocmds, and plugins. Follow a structured approach to enhance your Neovim experience.'
 ---
 
 In this tutorial you'll learn how to build and structure a modern Neovim config in Lua. I'll go through options, mappings, autocmds and plugins. You can read along with [my configuration](https://github.com/m4xshen/dotfiles/tree/main/nvim/nvim).
@@ -11,8 +11,9 @@ To learn more about what each option does, use `:h 'option name'` in Neovim.
 ## How Neovim loads config
 
 Neovim supports using `init.lua` as the configuration file. This should be placed in your config directory:
-- Linux, BSD or macOS: `~/.config/nvim` 
-- Windows: `~/AppData/Local/nvim/` 
+
+- Linux, BSD or macOS: `~/.config/nvim`
+- Windows: `~/AppData/Local/nvim/`
 
 Although you can put all the settings inside `init.lua`, you probably don't want to because the file will become large and difficult to manage.
 
@@ -36,6 +37,7 @@ My Neovim config structure:
 ```
 
 The first line of `init.lua`:
+
 ```lua
 require("config.options")
 ```
@@ -52,6 +54,7 @@ Now we understand how Neovim finds our files. We can start configuring it! Note 
 ## Options
 
 You can set options via Lua in two ways: `vim.opt` and `vim.o` series. I recommend using `vim.opt` series because it is more Lua-style, you can:
+
 - use `:append()`, `:prepend()` and `:remove()` to manipulate options
 - set its value to Lua table
 
@@ -80,6 +83,7 @@ Remember to `require("config.options")` in `init.lua`.
 ## Keymap
 
 Define your leader key: (I use space. Change this to whatever you like.)
+
 ```lua
 vim.g.mapleader = " "
 ```
@@ -129,12 +133,14 @@ nvim_create_autocmd({event}, {*opts})
 ```
 
 {event}: (string or array) events that will trigger the handler
+
 - BufEnter: after entering a buffer
 - CmdlineLeave: before leaving the command-line
 
 See all available events with `:h autocmd-events`.
 
 {opts}: options
+
 - pattern (string or array): pattern to match
 - callback (function or string): Lua function called when the event is triggered
 
@@ -231,5 +237,6 @@ Follow this pattern to install and set other plugins up. You can also see my [pl
 Now you have a modern Neovim configuration file written in Lua! If you want to explore more, you can install plugins like [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) and [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig). These plugins can give you better experience when coding.
 
 Discover more plugins on:
+
 - [Awesome Neovim](https://github.com/rockerBOO/awesome-neovim)
 - [This Week in Neovim](https://dotfyle.com/this-week-in-neovim)

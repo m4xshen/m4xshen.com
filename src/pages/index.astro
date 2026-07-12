@@ -4,85 +4,85 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
 const projects = [
-	{
-		name: 'Flowmo',
-		url: 'https://flowmo.io',
-		description: 'A productivity timer to help you enter flow state.',
-	},
-	{
-		name: 'Repohistory',
-		url: 'https://repohistory.com',
-		description: 'A GitHub repository analytics tool.',
-	},
-	{
-		name: 'hardtime.nvim',
-		url: 'https://github.com/m4xshen/hardtime.nvim',
-		description: 'A Neovim plugin to master Vim motions.',
-	},
-	{
-		name: 'Attack on Mushroom',
-		url: 'https://apps.apple.com/app/attack-on-mushroom/id6747713038',
-		description: 'An iOS arcade dodging game.',
-	},
+  {
+    name: 'Flowmo',
+    url: 'https://flowmo.io',
+    description: 'A productivity timer to help you enter flow state.',
+  },
+  {
+    name: 'Repohistory',
+    url: 'https://repohistory.com',
+    description: 'A GitHub repository analytics tool.',
+  },
+  {
+    name: 'hardtime.nvim',
+    url: 'https://github.com/m4xshen/hardtime.nvim',
+    description: 'A Neovim plugin to master Vim motions.',
+  },
+  {
+    name: 'Attack on Mushroom',
+    url: 'https://apps.apple.com/app/attack-on-mushroom/id6747713038',
+    description: 'An iOS arcade dodging game.',
+  },
 ];
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-	<section class="mb-12">
-		<p class="text-gray-600">
-			I am an engineer from Taiwan. I like to build products for real users.
-		</p>
-	</section>
-	<h2 class="mb-4 text-lg font-medium text-black">Projects</h2>
-	<ul class="m-0 mb-12 flex list-none flex-col gap-4 p-0">
-		{
-			projects.map((project) => (
-				<li>
-					<a
-						href={project.url}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="group flex items-baseline gap-2 text-gray-600 transition duration-200 hover:text-black"
-					>
-						<span>{project.name}</span>
-						<span
-							aria-hidden="true"
-							class="dot-leaders min-w-0 flex-1 whitespace-nowrap leading-none text-gray-300 transition duration-200 group-hover:text-black"
-						/>
-						<span class="shrink-0 text-gray-400 transition duration-200 group-hover:text-black">
-							{project.description}
-						</span>
-					</a>
-				</li>
-			))
-		}
-	</ul>
+  <section class="mb-12">
+    <p class="text-gray-600">
+      I am an engineer from Taiwan. I like to build products for real users.
+    </p>
+  </section>
+  <h2 class="mb-4 text-lg font-medium text-black">Projects</h2>
+  <ul class="m-0 mb-12 flex list-none flex-col gap-4 p-0">
+    {
+      projects.map((project) => (
+        <li>
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group flex items-baseline gap-2 text-gray-600 transition duration-200 hover:text-black"
+          >
+            <span>{project.name}</span>
+            <span
+              aria-hidden="true"
+              class="dot-leaders min-w-0 flex-1 leading-none whitespace-nowrap text-gray-300 transition duration-200 group-hover:text-black"
+            />
+            <span class="shrink-0 text-gray-400 transition duration-200 group-hover:text-black">
+              {project.description}
+            </span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
 
-	<h2 class="mb-4 text-lg font-medium text-black">Writing</h2>
-	<ul class="m-0 flex list-none flex-col gap-4 p-0">
-		{
-			posts.map((post) => (
-				<li>
-					<a
-						href={`/blog/${post.id}/`}
-						class="group flex items-baseline gap-2 text-gray-600 transition duration-200 hover:text-black"
-					>
-						<span>{post.data.title}</span>
-						<span
-							aria-hidden="true"
-							class="dot-leaders min-w-0 flex-1 whitespace-nowrap text-sm leading-none text-gray-300 transition duration-200 group-hover:text-black"
-						/>
-						<span class="shrink-0 text-sm text-gray-400 tabular-nums transition duration-200 group-hover:text-black">
-							{post.data.pubDate.getFullYear()} ·{' '}
-							{String(post.data.pubDate.getMonth() + 1).padStart(2, '0')}
-						</span>
-					</a>
-				</li>
-			))
-		}
-	</ul>
+  <h2 class="mb-4 text-lg font-medium text-black">Writing</h2>
+  <ul class="m-0 flex list-none flex-col gap-4 p-0">
+    {
+      posts.map((post) => (
+        <li>
+          <a
+            href={`/blog/${post.id}/`}
+            class="group flex items-baseline gap-2 text-gray-600 transition duration-200 hover:text-black"
+          >
+            <span>{post.data.title}</span>
+            <span
+              aria-hidden="true"
+              class="dot-leaders min-w-0 flex-1 text-sm leading-none whitespace-nowrap text-gray-300 transition duration-200 group-hover:text-black"
+            />
+            <span class="shrink-0 text-sm text-gray-400 tabular-nums transition duration-200 group-hover:text-black">
+              {post.data.pubDate.getFullYear()} ·{' '}
+              {String(post.data.pubDate.getMonth() + 1).padStart(2, '0')}
+            </span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
 </BaseLayout>

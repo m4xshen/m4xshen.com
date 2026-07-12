@@ -1,5 +1,5 @@
 ---
-title: "You might be overusing Vim visual mode"
+title: 'You might be overusing Vim visual mode'
 pubDate: '2024-08-09'
 description: "Learn why you might be overusing Vim's visual mode and how adopting a different mindset can help you use Vim more efficiently. Discover alternative commands and techniques that can save you keystrokes and boost your productivity in this insightful post."
 ogImage: ../../assets/overuse-vim-visual-mode-og.png
@@ -20,6 +20,7 @@ ggVG"+y
 ```
 
 Let's break it down:
+
 1. `gg` - Go to the beginning of the file.
 2. `V` - Enter visual line mode.
 3. `G` - Go to the end of the file.
@@ -72,7 +73,8 @@ This is a different mindset, but once you get used to it, you will find that you
 
 While I think you might be overusing visual mode, I'm not saying you should never use it.
 
-If you can't find a `motion`  to achieve what you want, visual mode is a good fallback. Here are some situations where you actually need visual mode:
+If you can't find a `motion` to achieve what you want, visual mode is a good fallback. Here are some situations where you actually need visual mode:
+
 1. Select text that is not selectable with simple `motion`.
 2. Select lines that are out of the current view.
 3. Visually confirm the text you are going to operate on.

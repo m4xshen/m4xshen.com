@@ -9,22 +9,22 @@ const { title, description, pubDate, updatedDate, ogImage } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description} image={ogImage}>
-	<article>
-		<div class="prose max-w-none">
-			<div class="mb-4 py-4 leading-none">
-				<h1 class="m-0 mb-4">{title}</h1>
-				<div class="text-gray">
-					<FormattedDate date={pubDate} />
-					{
-						updatedDate && (
-							<div class="italic">
-								Last updated on <FormattedDate date={updatedDate} />
-							</div>
-						)
-					}
-				</div>
-			</div>
-			<slot />
-		</div>
-	</article>
+  <article>
+    <div class="prose max-w-none">
+      <div class="mb-4 py-4 leading-none">
+        <h1 class="m-0 mb-4">{title}</h1>
+        <div class="text-gray">
+          <FormattedDate date={pubDate} />
+          {
+            updatedDate && (
+              <div class="italic">
+                Last updated on <FormattedDate date={updatedDate} />
+              </div>
+            )
+          }
+        </div>
+      </div>
+      <slot />
+    </div>
+  </article>
 </BaseLayout>

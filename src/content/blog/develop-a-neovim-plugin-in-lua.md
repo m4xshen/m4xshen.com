@@ -1,7 +1,7 @@
 ---
-title: "Develop a Neovim plugin in Lua"
-pubDate: "2023-09-15"
-description: "Learn how to develop a Neovim plugin in Lua. Understand the structure of Neovim plugin, Lua module, and create a simple plugin."
+title: 'Develop a Neovim plugin in Lua'
+pubDate: '2023-09-15'
+description: 'Learn how to develop a Neovim plugin in Lua. Understand the structure of Neovim plugin, Lua module, and create a simple plugin.'
 ---
 
 As the author of [hardtime.nvim](https://github.com/m4xshen/hardtime.nvim), [autoclose.nvim](https://github.com/m4xshen/autoclose.nvim) and [smartcolumn.nvim](https://github.com/m4xshen/smartcolumn.nvim), I've been developing Neovim plugins for a while. In this tutorial, I'll break down the process and share my insights to help you start your own journey!

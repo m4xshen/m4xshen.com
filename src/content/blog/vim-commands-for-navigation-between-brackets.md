@@ -1,7 +1,7 @@
 ---
-title: "3 Vim commands for blazingly fast navigation between brackets"
-pubDate: "2024-02-20"
-description: "Discover three powerful Vim commands for blazingly fast navigation between brackets in your code. Enhance your coding efficiency with %, [(, [{, ][, and [] for unmatched precision in large files and complex structures. Perfect for developers looking to streamline their workflow and boost productivity."
+title: '3 Vim commands for blazingly fast navigation between brackets'
+pubDate: '2024-02-20'
+description: 'Discover three powerful Vim commands for blazingly fast navigation between brackets in your code. Enhance your coding efficiency with %, [(, [{, ][, and [] for unmatched precision in large files and complex structures. Perfect for developers looking to streamline their workflow and boost productivity.'
 ---
 
 There are often lots of brackets within a programming file. Therefore the efficiency of navigating between them becomes crucial for the overall productivity. I'll introduce you to three types of commands that allows you to navigate between brackets blazingly fast!
@@ -32,6 +32,7 @@ Press `%` again:
 This demonstrates that `%` jumps between the matched brackets. However the actual behavior is more than that. `%` find the next item in this line **after or under the cursor** and jump to its match.
 
 `%` not only works on `()`, it also works with:
+
 - pairs: `()` or `[]` or `{}` (this can be changed with the `'matchpairs'` option)
 - C-style comment: `/* */`.
 - HTML tag: `<div></div>`
@@ -55,6 +56,7 @@ some text (( example )) some text
 ```
 
 2. Press `%`:
+
 ```plaintext
 some text (( example )) some text
                       ↑
@@ -63,10 +65,11 @@ some text (( example )) some text
 However the `f(` is unnecessary. You can achieve the same navigation with just `%`.
 
 This is because of `%` works like this under the hood:
+
 1. Finds the first pair after or under the cursor which is `(`.
 2. Jump to its match which is `)`.
 
-It might not be that intuitive to use `%` when bracket not under the cursor, but after you get more familiar with it you can achieve some magic movement with it. 
+It might not be that intuitive to use `%` when bracket not under the cursor, but after you get more familiar with it you can achieve some magic movement with it.
 
 ## 2. `[(` and `[{`
 
@@ -91,7 +94,7 @@ Press `[{`:
 {
 ↑
   example
-  
+
   text
 
 }
@@ -104,11 +107,10 @@ In addition to `[(` and `[{`, there's also `])` and `]}`:
 
 Let's see a practical example. Imagine you're navigating inside a large function:
 
-
 ```javascript
 function example() {
   const sum = 0;
-  ↑ 
+  ↑
   for (let i = 0; i < 10; i++) {
     sum += i;
   }

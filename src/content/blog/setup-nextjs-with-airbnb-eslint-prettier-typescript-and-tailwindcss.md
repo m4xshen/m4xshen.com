@@ -1,7 +1,7 @@
 ---
-title: "Setup Next.js with Airbnb ESLint, Prettier, TypeScript and Tailwind CSS"
+title: 'Setup Next.js with Airbnb ESLint, Prettier, TypeScript and Tailwind CSS'
 pubDate: 2023-09-10
-description: "Set up Next.js with Airbnb ESLint, Prettier, TypeScript, and Tailwind CSS for efficient development. A step-by-step guide for a seamless environment."
+description: 'Set up Next.js with Airbnb ESLint, Prettier, TypeScript, and Tailwind CSS for efficient development. A step-by-step guide for a seamless environment.'
 ---
 
 In this tutorial you'll learn how to setup a Next.js project with Airbnb ESLint, Prettier, Typescript and Tailwind CSS in a correct way so that you don't need to turn off a lot of rules inside `.eslintrc.json` anymore.
@@ -42,7 +42,7 @@ Example:
 
 ```json
 {
-  "singleQuote": true,
+  "singleQuote": true
 }
 ```
 
@@ -105,11 +105,7 @@ Add `airbnb` and `airbnb/hooks` to `.eslintrc.json`:
 
 ```json
 {
-  "extends": [
-    "airbnb",
-    "airbnb/hooks",
-    "next/core-web-vitals"
-  ]
+  "extends": ["airbnb", "airbnb/hooks", "next/core-web-vitals"]
 }
 ```
 
