@@ -1,6 +1,5 @@
 ---
 import { getCollection } from 'astro:content';
-import FormattedDate from '../components/FormattedDate.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
@@ -13,16 +12,21 @@ const posts = (await getCollection('blog')).sort(
 	<ul class="m-0 flex list-none flex-col gap-4 p-0">
 		{
 			posts.map((post) => (
-				<li class="flex items-baseline justify-between gap-4">
+				<li>
 					<a
 						href={`/blog/${post.id}/`}
-						class="text-ink transition duration-200 hover:text-accent"
+						class="group flex items-baseline gap-2 text-gray-600 transition duration-200 hover:text-black"
 					>
-						{post.data.title}
+						<span>{post.data.title}</span>
+						<span
+							aria-hidden="true"
+							class="dot-leaders min-w-0 flex-1 whitespace-nowrap text-sm leading-none text-gray-300 transition duration-200 group-hover:text-black"
+						/>
+						<span class="shrink-0 text-sm text-gray-400 tabular-nums transition duration-200 group-hover:text-black">
+							{post.data.pubDate.getFullYear()} ·{' '}
+							{String(post.data.pubDate.getMonth() + 1).padStart(2, '0')}
+						</span>
 					</a>
-					<span class="shrink-0 text-gray">
-						<FormattedDate date={post.data.pubDate} />
-					</span>
 				</li>
 			))
 		}

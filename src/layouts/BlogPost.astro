@@ -5,10 +5,10 @@ import BaseLayout from './BaseLayout.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate } = Astro.props;
+const { title, description, pubDate, updatedDate, ogImage } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} image={ogImage}>
 	<article>
 		<div class="prose max-w-none">
 			<div class="mb-4 py-4 leading-none">

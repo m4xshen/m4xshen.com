@@ -26,6 +26,19 @@
     0 16px 32px rgb(96 115 159 / 33%);
 }
 
+@layer components {
+  /* Dot leaders: fills the horizontal gap between two items with a row of
+     dots, clipped to whatever width the flex-1 element ends up with. */
+  .dot-leaders {
+    overflow: hidden;
+  }
+
+  .dot-leaders::after {
+    content: "····································································································································································";
+    letter-spacing: 0.4em;
+  }
+}
+
 @layer base {
   body {
     @apply bg-no-repeat text-gray-dark;
