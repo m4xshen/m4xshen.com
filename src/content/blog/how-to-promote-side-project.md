@@ -55,7 +55,7 @@ You can share your project on the platform where your target community is active
 
 In my case, Neovim community is pretty active on Reddit, so I shared my project on the [r/neovim](https://www.reddit.com/r/neovim/):
 
-<blockquote class="reddit-embed-bq" style="height:500px" data-embed-theme="dark" data-embed-showedits="false" data-embed-created="2024-06-07T07:16:09.555Z" data-embed-height="566"><a href="https://www.reddit.com/r/neovim/comments/14jferq/hardtimenvim_a_neovim_plugin_helping_you/">hardtime.nvim - A Neovim plugin helping you establish good command workflow and habit</a><br> by<a href="https://www.reddit.com/user/m4xshen/">u/m4xshen</a> in<a href="https://www.reddit.com/r/neovim/">neovim</a></blockquote><script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
+<blockquote class="reddit-embed-bq" style="height:500px" data-embed-theme="light" data-embed-showedits="false" data-embed-created="2024-06-07T07:16:09.555Z" data-embed-height="566"><a href="https://www.reddit.com/r/neovim/comments/14jferq/hardtimenvim_a_neovim_plugin_helping_you/">hardtime.nvim - A Neovim plugin helping you establish good command workflow and habit</a><br> by<a href="https://www.reddit.com/user/m4xshen/">u/m4xshen</a> in<a href="https://www.reddit.com/r/neovim/">neovim</a></blockquote><script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
 
 Here are 3 things I always do when sharing project on Reddit:
 
@@ -63,7 +63,7 @@ Here are 3 things I always do when sharing project on Reddit:
 - Post at the user-active time. I use website like [SocialRise](https://social-rise.com/subreddit-analysis) to search the best post time of a specific subreddit.
 - Remember to explain the detail of your project and link to the GitHub repo.
 
-<blockquote class="reddit-embed-bq" data-embed-theme="dark" data-embed-showedits="false" data-embed-created="2024-06-07T07:20:08.959Z" data-embed-height="641"><a href="https://www.reddit.com/r/neovim/comments/14jferq/comment/jpkuvyz/">Comment</a><br> by<a href="https://www.reddit.com/user/m4xshen/">u/m4xshen</a> from discussion<a href="https://www.reddit.com/r/neovim/comments/14jferq/hardtimenvim_a_neovim_plugin_helping_you/"><no value=""></no></a><br> in<a href="https://www.reddit.com/r/neovim/">neovim</a></blockquote><script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
+<blockquote class="reddit-embed-bq" data-embed-theme="light" data-embed-showedits="false" data-embed-created="2024-06-07T07:20:08.959Z" data-embed-height="641"><a href="https://www.reddit.com/r/neovim/comments/14jferq/comment/jpkuvyz/">Comment</a><br> by<a href="https://www.reddit.com/user/m4xshen/">u/m4xshen</a> from discussion<a href="https://www.reddit.com/r/neovim/comments/14jferq/hardtimenvim_a_neovim_plugin_helping_you/"><no value=""></no></a><br> in<a href="https://www.reddit.com/r/neovim/">neovim</a></blockquote><script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
 
 Also remember to engage with the community. If someone asks a question or gives feedback no matter it's positive or negative, make sure to respond to them. This shows that you care about the users and are willing to improve the project.
 
@@ -98,13 +98,13 @@ After a while, your project might develop more features or even release a major 
 
 For example, after my first post about hardtime.nvim, I worked on the users' feedback and added some new features. I then wrote a new post few months later to share the updates:
 
-<blockquote class="reddit-embed-bq" style="height:500px" data-embed-theme="dark" data-embed-showedits="false" data-embed-created="2024-06-07T08:43:29.307Z" data-embed-height="546"><a href="https://www.reddit.com/r/neovim/comments/15wapw7/update_hardtimenvim_more_hints_custom_hints/">UPDATE: hardtime.nvim - more hints, custom hints, hardtime report</a><br> by<a href="https://www.reddit.com/user/m4xshen/">u/m4xshen</a> in<a href="https://www.reddit.com/r/neovim/">neovim</a></blockquote><script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
+<blockquote class="reddit-embed-bq" style="height:500px" data-embed-theme="light" data-embed-showedits="false" data-embed-created="2024-06-07T08:43:29.307Z" data-embed-height="546"><a href="https://www.reddit.com/r/neovim/comments/15wapw7/update_hardtimenvim_more_hints_custom_hints/">UPDATE: hardtime.nvim - more hints, custom hints, hardtime report</a><br> by<a href="https://www.reddit.com/user/m4xshen/">u/m4xshen</a> in<a href="https://www.reddit.com/r/neovim/">neovim</a></blockquote><script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
 
 Just make sure the update are valuable to the users. You don't want to spam the community with minor updates that don't bring much value.
 
 Another example is that recently I fixed some long-standing issues, and released its first major version v1.0.0. I then shared it on Reddit again:
 
-<blockquote class="reddit-embed-bq" style="height:500px" data-embed-theme="dark" data-embed-height="574"><a href="https://www.reddit.com/r/neovim/comments/1kpifoi/hardtimenvim_v100_is_now_released/">Hardtime.nvim v1.0.0 is Now Released!</a><br> by<a href="https://www.reddit.com/user/m4xshen/">u/m4xshen</a> in<a href="https://www.reddit.com/r/neovim/">neovim</a></blockquote><script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
+<blockquote class="reddit-embed-bq" style="height:500px" data-embed-theme="light" data-embed-height="574"><a href="https://www.reddit.com/r/neovim/comments/1kpifoi/hardtimenvim_v100_is_now_released/">Hardtime.nvim v1.0.0 is Now Released!</a><br> by<a href="https://www.reddit.com/user/m4xshen/">u/m4xshen</a> in<a href="https://www.reddit.com/r/neovim/">neovim</a></blockquote><script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
 
 This time, I also shared the update on HackerNews. It is a minimalist platform where you can only post a link and a short title. So make sure to write a eye-catching title that describes your project well:
 
