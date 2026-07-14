@@ -40,9 +40,8 @@
 
 @layer base {
   body {
-    @apply bg-no-repeat text-gray-dark;
-    background-image: linear-gradient(rgb(229 233 240 / 50%), #fff);
-    background-size: 100% 600px;
+    @apply text-gray-dark;
+    background-color: #fdfdfc;
     font-size: 16px;
     line-height: 1.65;
   }
