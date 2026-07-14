@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
+import { SITE_TITLE } from '../consts';
 import BaseLayout from './BaseLayout.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
@@ -8,7 +9,11 @@ type Props = CollectionEntry<'blog'>['data'];
 const { title, description, pubDate, updatedDate, ogImage } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description} image={ogImage}>
+<BaseLayout
+  title={`${title} | ${SITE_TITLE}`}
+  description={description}
+  image={ogImage}
+>
   <article>
     <div class="prose max-w-none">
       <div class="mb-4 py-4 leading-none">
