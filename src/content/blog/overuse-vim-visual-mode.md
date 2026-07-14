@@ -59,9 +59,9 @@ dk
 
 ## Different mindset
 
-In the above examples, the first editing approach is: `v/V` + [`motion`](/posts/vim-basic-commands#motions) + [`operator`](/posts/vim-basic-commands/#operator). You select text, move the cursor to a specific location, and then do the operation.
+In the above examples, the first editing approach is: `v/V` + [`motion`](/vim-basic-commands#motions) + [`operator`](/vim-basic-commands/#operator). You select text, move the cursor to a specific location, and then do the operation.
 
-The second approach is: [`operator` + `motion`](/posts/vim-basic-commands/#operator-with-motion). This means apply an operation from current cursor position to a specific location. In this way you don't need to enter visual mode at all.
+The second approach is: [`operator` + `motion`](/vim-basic-commands/#operator-with-motion). This means apply an operation from current cursor position to a specific location. In this way you don't need to enter visual mode at all.
 
 I think the reason why so many people stick to first approach is because when we use general text editors, we are used to selecting text with the mouse and then do the operation. So, when we switch to Vim, we try to do the same thing with visual mode.
 

@@ -73,8 +73,8 @@ Don't get me wrong. I don't mean you have to write a post about your project. Of
 
 For example, here are my 2 articles related to the Vim command:
 
-- [Practical Vim command workflow](/posts/vim-command-workflow)
-- [You might be overusing Vim visual mode](/posts/overuse-vim-visual-mode)
+- [Practical Vim command workflow](/vim-command-workflow)
+- [You might be overusing Vim visual mode](/overuse-vim-visual-mode)
 
 At the end of both articles, I mention hardtime.nvim as a tool to help establish good command workflow and quit bad habits.
 

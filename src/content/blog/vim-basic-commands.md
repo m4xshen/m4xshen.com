@@ -236,4 +236,4 @@ N			    repeat the latest `/` or `?` in opposite direction
 
 ## Final Words
 
-Remember all these command takes some time. If you are already familiar with these commands, you can continue to read the [Practical Vim command workflow](/posts/vim-command-workflow) to learn how to move/edit text in Vim efficiently.
+Remember all these command takes some time. If you are already familiar with these commands, you can continue to read the [Practical Vim command workflow](/vim-command-workflow) to learn how to move/edit text in Vim efficiently.

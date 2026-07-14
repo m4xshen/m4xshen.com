@@ -16,9 +16,9 @@ Here are some general rules of my workflow:
 4. Use word-motion (`w` `W` `b` `B` `e` `E` `ge` `gE`) for short-distance horizontal movement.
 5. Use `f` `F` `t` `T` `,` `;` `0` `^` `$` for medium to long-distance horizontal movement.
 6. Use operator + motion/text-object (eg: `ci{` `y5j` `dap`) whenever possible.
-7. Use `%` and [square bracket commands](/posts/vim-commands-for-navigation-between-brackets) to jump between brackets.
+7. Use `%` and [square bracket commands](/vim-commands-for-navigation-between-brackets) to jump between brackets.
 
-If you are not familiar with some of the commands and concepts, you can learn about them in [Essential Vim commands for efficient text editing](/posts/vim-basic-commands).
+If you are not familiar with some of the commands and concepts, you can learn about them in [Essential Vim commands for efficient text editing](/vim-basic-commands).
 
 ## Examples
 
