@@ -46,14 +46,14 @@ const projects = [
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            class="group flex items-baseline gap-2 text-gray-600 transition duration-200 hover:text-black"
+            class="group flex flex-col items-start text-gray-600 transition duration-200 hover:text-black md:flex-row md:items-baseline md:gap-2"
           >
             <span>{project.name}</span>
             <span
               aria-hidden="true"
-              class="dot-leaders min-w-0 flex-1 leading-none whitespace-nowrap text-gray-300 transition duration-200 group-hover:text-black"
+              class="dot-leaders hidden min-w-0 flex-1 leading-none whitespace-nowrap text-gray-300 transition duration-200 group-hover:text-black md:block"
             />
-            <span class="shrink-0 text-gray-400 transition duration-200 group-hover:text-black">
+            <span class="text-gray-400 transition duration-200 group-hover:text-black md:shrink-0">
               {project.description}
             </span>
           </a>
@@ -69,14 +69,14 @@ const projects = [
         <li>
           <a
             href={`/blog/${post.id}/`}
-            class="group flex items-baseline gap-2 text-gray-600 transition duration-200 hover:text-black"
+            class="group flex flex-col items-start text-gray-600 transition duration-200 hover:text-black md:flex-row md:items-baseline md:gap-2"
           >
             <span>{post.data.title}</span>
             <span
               aria-hidden="true"
-              class="dot-leaders min-w-0 flex-1 text-sm leading-none whitespace-nowrap text-gray-300 transition duration-200 group-hover:text-black"
+              class="dot-leaders hidden min-w-0 flex-1 text-sm leading-none whitespace-nowrap text-gray-300 transition duration-200 group-hover:text-black md:block"
             />
-            <span class="shrink-0 text-sm text-gray-400 tabular-nums transition duration-200 group-hover:text-black">
+            <span class="text-sm text-gray-400 tabular-nums transition duration-200 group-hover:text-black md:shrink-0">
               {post.data.pubDate.getFullYear()} ·{' '}
               {String(post.data.pubDate.getMonth() + 1).padStart(2, '0')}
             </span>
