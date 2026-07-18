@@ -1,0 +1,31 @@
+---
+interface Props {
+  term: string;
+}
+
+const { term } = Astro.props;
+---
+
+<section
+  class="mt-12 border-t border-gray-light pt-8"
+  aria-labelledby="comments-heading"
+>
+  <div class="giscus"></div>
+
+  <script
+    src="https://giscus.app/client.js"
+    data-repo="m4xshen/m4xshen.com"
+    data-repo-id="R_kgDOIwxuSw"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOIwxuS84CcRI1"
+    data-mapping="specific"
+    data-term={term}
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="en"
+    crossorigin="anonymous"
+    async></script>
+</section>

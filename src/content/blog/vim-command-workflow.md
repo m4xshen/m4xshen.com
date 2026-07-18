@@ -2,6 +2,7 @@
 title: 'Practical Vim command workflow'
 pubDate: '2023-01-26'
 description: 'Master the art of efficient text navigation and editing in Vim with this comprehensive command workflow tutorial. Explore key commands and practical examples to enhance your productivity in Vim.'
+giscusTerm: 'posts/vim-command-workflow/'
 ---
 
 In Vim, there's a variety of commands that let you accomplish tasks in different ways. This can be overwhelming for beginners trying to figure out the most efficient keystrokes for editing. In this tutorial, I'll share my approach to using Vim commands and offer some real life examples to help you improve your workflow.

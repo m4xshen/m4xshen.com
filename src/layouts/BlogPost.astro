@@ -1,12 +1,14 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
+import Giscus from '../components/Giscus.astro';
 import { SITE_TITLE } from '../consts';
 import BaseLayout from './BaseLayout.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, ogImage } = Astro.props;
+const { title, description, pubDate, updatedDate, ogImage, giscusTerm } =
+  Astro.props;
 ---
 
 <BaseLayout
@@ -32,4 +34,5 @@ const { title, description, pubDate, updatedDate, ogImage } = Astro.props;
       <slot />
     </div>
   </article>
+  <Giscus term={giscusTerm} />
 </BaseLayout>

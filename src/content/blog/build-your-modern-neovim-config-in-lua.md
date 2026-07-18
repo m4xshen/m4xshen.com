@@ -2,6 +2,7 @@
 title: 'Build your modern Neovim config in Lua'
 pubDate: '2023-02-26'
 description: 'Learn how to build a modern Neovim configuration in Lua with options, mappings, autocmds, and plugins. Follow a structured approach to enhance your Neovim experience.'
+giscusTerm: 'posts/build-your-modern-neovim-config-in-lua/'
 ---
 
 In this tutorial you'll learn how to build and structure a modern Neovim config in Lua. I'll go through options, mappings, autocmds and plugins. You can read along with [my configuration](https://github.com/m4xshen/dotfiles/tree/main/nvim/nvim).

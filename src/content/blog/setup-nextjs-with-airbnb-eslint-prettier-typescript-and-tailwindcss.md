@@ -2,6 +2,7 @@
 title: 'Setup Next.js with Airbnb ESLint, Prettier, TypeScript and Tailwind CSS'
 pubDate: 2023-09-10
 description: 'Set up Next.js with Airbnb ESLint, Prettier, TypeScript, and Tailwind CSS for efficient development. A step-by-step guide for a seamless environment.'
+giscusTerm: 'posts/setup-nextjs-with-airbnb-eslint-prettier-typescript-and-tailwindcss/'
 ---
 
 In this tutorial you'll learn how to setup a Next.js project with Airbnb ESLint, Prettier, Typescript and Tailwind CSS in a correct way so that you don't need to turn off a lot of rules inside `.eslintrc.json` anymore.

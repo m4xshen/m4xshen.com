@@ -2,6 +2,7 @@
 title: 'You might be overusing Vim visual mode'
 pubDate: '2024-08-09'
 description: "Learn why you might be overusing Vim's visual mode and how adopting a different mindset can help you use Vim more efficiently. Discover alternative commands and techniques that can save you keystrokes and boost your productivity in this insightful post."
+giscusTerm: 'posts/overuse-vim-visual-mode'
 ogImage: ../../assets/overuse-vim-visual-mode-og.png
 ---
 

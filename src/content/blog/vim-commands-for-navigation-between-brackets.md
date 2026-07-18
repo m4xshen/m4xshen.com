@@ -2,6 +2,7 @@
 title: '3 Vim commands for blazingly fast navigation between brackets'
 pubDate: '2024-02-20'
 description: 'Discover three powerful Vim commands for blazingly fast navigation between brackets in your code. Enhance your coding efficiency with %, [(, [{, ][, and [] for unmatched precision in large files and complex structures. Perfect for developers looking to streamline their workflow and boost productivity.'
+giscusTerm: 'posts/vim-commands-for-navigation-between-brackets/'
 ---
 
 There are often lots of brackets within a programming file. Therefore the efficiency of navigating between them becomes crucial for the overall productivity. I'll introduce you to three types of commands that allows you to navigate between brackets blazingly fast!

@@ -2,6 +2,7 @@
 title: 'Essential Vim commands for efficient text editing'
 pubDate: '2023-01-25'
 description: 'Master the essential Vim commands for efficient text editing. Learn Normal, Insert, and Command-line modes, navigation, editing, and more in this comprehensive Vim tutorial.'
+giscusTerm: 'posts/vim-basic-commands/'
 ---
 
 In this tutorial, I'll cover the basic commands and concepts that you need to know to work in Vim efficiently. I recommend you to open a file with Vim/Neovim and try the command while reading it.
