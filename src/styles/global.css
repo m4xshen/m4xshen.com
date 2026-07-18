@@ -38,6 +38,47 @@
   }
 }
 
+.prose :where(code):not(:where(pre code)) {
+  border-radius: 0.25rem;
+  background-color: var(--color-gray-light);
+  padding: 0.125rem 0.25rem;
+}
+
+.prose :where(code):not(:where(pre code))::before,
+.prose :where(code):not(:where(pre code))::after {
+  content: none;
+}
+
+.prose pre.astro-code {
+  @apply shadow-sm;
+  border: 1px solid var(--color-gray-light);
+  border-radius: 0.75rem;
+}
+
+.prose :where(h1, h2, h3, h4) {
+  font-weight: 500;
+}
+
+.prose :where(strong) {
+  font-weight: 600;
+}
+
+.prose :where(h1) {
+  font-size: 1.5em;
+}
+
+.prose :where(h2) {
+  font-size: 1.25em;
+}
+
+.prose :where(h3) {
+  font-size: 1.1em;
+}
+
+.prose :where(h4) {
+  font-size: 0.95em;
+}
+
 @layer base {
   body {
     @apply text-gray-dark;

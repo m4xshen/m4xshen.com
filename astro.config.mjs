@@ -11,12 +11,18 @@ export default defineConfig({
   site: 'https://m4xshen.com',
   integrations: [mdx(), sitemap()],
 
+  markdown: {
+    shikiConfig: {
+      theme: 'github-light',
+    },
+  },
+
   fonts: [
     {
       provider: fontProviders.fontsource(),
       name: 'Inter',
       cssVariable: '--font-inter',
-      weights: [400, 700],
+      weights: [400, 500, 600, 700],
       styles: ['normal'],
       subsets: ['latin'],
       fallbacks: ['sans-serif'],
